@@ -36,9 +36,13 @@ Todas las páginas fueron desarrolladas de forma **responsive**, adaptándose a 
 
 ## 📁 Organización del repositorio
 📄 index.html → Página principal
+<br>
 📂 assets → Imágenes, íconos, logos
+<br>
 📂 css
+<br>
 📂 pages
+<br>
 📂 Wireframes → Bocetos iniciales del diseño, tanto en desktop como en mobile
 
 ## 🚧 Estado del proyecto

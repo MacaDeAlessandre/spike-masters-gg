@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $main-background;
+    color: $font-color;
+}
+
+header,
+body,
+footer {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: nth($fontsizes, 4);
+    font-weight: 400;
+}
+
+p {
+    font-size: 17.5;
+    font-weight: 250;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .navbar {
+        --bs-navbar-padding-y: 0;
+        --bs-navbar-nav-link-padding-x: 0.7rem;
+        .container-fluid {
+            background-color: $main-background;
+            .navbar-brand {
+                img {
+                    transition: 1s ease-in;
+                }
+                &:hover {
+                    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.369));
+                }
+            }
+            .navbar-toggler {
+                background-color: white;
+                transition: 0.3s ease-in;
+                &:active {
+                    background-color: $color-acento;
+                }
+                &:hover {
+                    background-color: $color-acento;
+                }       
+            }
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            color: $font-color;
+                            border-radius: 0.6em;
+                            transition: 0.2s ease-in;
+                            &:hover {
+                                color: $font-color;
+                                background-color: $color-acento;
+                                border-radius: 0.6em;
+                            }
+                            .nav-link.active {
+                                color: $font-color;
+                            }
+                            .nav-link.show {
+                                color: $font-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-description {
+    background-image: url(../assets/img/wavy-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+    h2 {
+        font-size: 18px;
+        font-weight: 370;
+        margin: 20px 20px;
+    }
+}
+
+/* INDEX - CLASES */
+.container-fluid {
+    background-color: $main-background;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0;
+    --bs-navbar-nav-link-padding-x: 0.7rem;
+}
+
+.card-sections {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 0;
+    margin: 0 20px;
+    div {
+        width: 300px;
+        border: 2px solid #f06065;
+        border-radius: 10px;
+        padding: 10px 10px;
+        .card-sections__icon {
+            vertical-align: baseline;
+            margin: 10px 0;
+        }
+        .batch {
+            vertical-align: baseline;
+            padding: 0 3px;
+            margin: 10px 0;
+            filter: drop-shadow(0 0 60px rgba(255, 255, 255, 0.611));
+        }
+        .card-sections__text {
+            margin: 20px 10px;
+        }  
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: $main-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    z-index: 2;
+    .footer__icons {
+        a {
+            img {
+                padding: 10px;
+            }
+        }
+    }
+}
+

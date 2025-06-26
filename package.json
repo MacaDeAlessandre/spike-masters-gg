@@ -1,0 +1,19 @@
+{
+  "name": "spike-masters-gg",
+  "version": "1.0.0",
+  "description": "Este es un proyecto realizado durante la cursada de **Desarrollo Web en Coderhouse** 🧑‍💻.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MacaDeAlessandre/spike-masters-gg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MacaDeAlessandre/spike-masters-gg/issues"
+  },
+  "homepage": "https://github.com/MacaDeAlessandre/spike-masters-gg#readme"
+}

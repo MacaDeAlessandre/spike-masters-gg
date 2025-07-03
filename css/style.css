@@ -112,20 +112,11 @@ header {
 }
 
 .navbar-brand img {
-    transition: 1s ease-in;
+    transition: 0.3s ease-in-out;
 }
 
 .navbar-brand img:hover {
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.369))
-}
-
-@keyframes transformation {
-    0% {
-        filter: brightness(80%);
-    }
-    100% {
-        filter: brightness(100%);
-    }
+    filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.305));
 }
 
 .navbar-nav .nav-link.active,
@@ -616,7 +607,7 @@ a:visited {
     padding: 20px;
 }
 
-.tournament-points div p {
+.tournament-points p {
     font-size: 16px;
     text-align: left;
     padding: 3px 0;
@@ -669,6 +660,13 @@ a:visited {
 }
 
 @media screen and (max-width: 481px) {
+    .tournament-points {
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 481px) {
     .tournament-points__p {
         font-size: 16px;
     }
@@ -704,12 +702,17 @@ a:visited {
 }
 
 @media screen and (max-width: 481px) {
+    .tournament-points p {
+        font-size: 15px;
+        text-align: left;
+    }
+    
+}
+
+@media screen and (max-width: 481px) {
     .tournament-points table td {
         font-size: 14px;
-
-    }
-
-    
+    }   
 }
 
 @media screen and (max-width: 481px) {
@@ -741,8 +744,16 @@ a:visited {
 }
 
 .news__1 {
+    background: linear-gradient(90deg,rgba(255, 70, 86, 0.162) 0%, rgba(0, 0, 0, 0.178) 50%, rgba(255, 70, 86, 0.19) 100%), url(../assets/img/bg-news.jpg);
     grid-column: span 6;
     width: 100% !important;
+    transition: 0.6s ease-in-out;
+}
+
+.news__1:hover {
+    background: linear-gradient(#ff4656c6, rgba(0, 0, 0, 0)), url(../assets/img/bg-news.jpg);
+    justify-self: center;
+    transform: scale(1.1);
 }
 
 .news__1 p {
@@ -750,8 +761,17 @@ a:visited {
 }
 
 .news__2 {
+    background: linear-gradient(90deg,rgba(255, 70, 86, 0.162) 0%, rgba(0, 0, 0, 0.178) 50%, rgba(255, 70, 86, 0.19) 100%), url(../assets/img/bg-news.jpg);
     grid-column: span 3;
     width: 100% !important;
+    justify-self: center;
+    transition: 0.6s ease-in-out;
+}
+
+.news__2:hover {
+    background: linear-gradient(#ff4656c6, rgba(0, 0, 0, 0)), url(../assets/img/bg-news.jpg);
+    width: 92% !important;
+    transform: scale(1.1);
 }
 
 .news__2 p {
@@ -759,8 +779,17 @@ a:visited {
 }
 
 .news__3 {
+    background: linear-gradient(90deg,rgba(255, 70, 86, 0.162) 0%, rgba(0, 0, 0, 0.178) 50%, rgba(255, 70, 86, 0.19) 100%), url(../assets/img/bg-news.jpg);
     grid-column: span 3;
+    justify-self: center;
     width: 100% !important;
+    transition: 0.6s ease-in-out;
+}
+
+.news__3:hover {
+    background: linear-gradient(#ff4656c6, rgba(0, 0, 0, 0)), url(../assets/img/bg-news.jpg);
+    width: 92% !important;
+    transform: scale(1.1);
 }
 
 .news__3 p {
@@ -768,8 +797,17 @@ a:visited {
 }
 
 .news__4 {
+    background: linear-gradient(90deg,rgba(255, 70, 86, 0.162) 0%, rgba(0, 0, 0, 0.178) 50%, rgba(255, 70, 86, 0.19) 100%), url(../assets/img/bg-news.jpg);
     grid-column: span 2;
+    justify-self: center;   
     width: 100% !important;
+    transition: 0.6s ease-in-out;
+}
+
+.news__4:hover {
+    background: linear-gradient(#ff4656c6, rgba(0, 0, 0, 0)), url(../assets/img/bg-news.jpg);
+    width: 92% !important;
+    transform: scale(1.1);
 }
 
 .news__4 p {
@@ -800,9 +838,27 @@ a:visited {
     padding: 5px;
 }
 
+@media screen and (max-width: 1179px) {
+    .news div h3 {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1179px) {
+    .news div p {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 1025px) {
     .news {
         grid-template-rows: repeat(7, 200px);
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .news__4 {
+        grid-column: span 3;
     }
 }
 
@@ -819,17 +875,6 @@ a:visited {
     }
 }
 
-@media screen and (max-width: 1025px) {
-    .news__4 {
-        grid-column: span 3;
-    }
-}
-
-@media screen and (max-width: 1179px) {
-    .news div h3 {
-        font-size: 19px;
-    }
-}
 
 @media screen and (max-width: 481px) {
     .news div h3 {
@@ -837,11 +882,6 @@ a:visited {
     }
 }
 
-@media screen and (max-width: 1179px) {
-    .news div p {
-        font-size: 16px;
-    }
-}
 
 /* Página Inscribite*/
 
@@ -897,6 +937,7 @@ a:visited {
 
 .bi {
     padding: 6px;
+    transition: 0.3s ease-in;
 }
 
 .bi:hover {

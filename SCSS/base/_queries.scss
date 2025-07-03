@@ -64,13 +64,6 @@
     }
 }
 
-@media screen and (max-width: 481px) {
-    h2 {
-        font-size: 24px;
-        margin: 0 20px;
-    }
-}
-
 @media screen and (max-width: 769px) {
     h2 {
         font-size: 25px;
@@ -80,18 +73,16 @@
 
 @media screen and (max-width: 481px) {
     h2 {
-        font-size: 22px;
+        font-size: 24px;
         margin: 0 20px;
     }
 }
 
-@media screen and (max-width: 481px) {
-    .page-description {
-        background-image: none;
 
-        h1 {
-            font-size: 32px;
-        }
+@media screen and (max-width: 481px) {
+    h2 {
+        font-size: 22px;
+        margin: 0 20px;
     }
 }
 
@@ -103,6 +94,16 @@
         }
     }
 }
+
+@media screen and (max-width: 481px) {
+    .page-description {
+        background-image: none;
+        h1 {
+            font-size: 32px;
+        }
+    }
+}
+
 
 @media screen and (max-width: 769px) {
     .page-description {
@@ -202,20 +203,20 @@
     }
 }
 
-@media screen and (max-width: 1025px) {
-    .about-tournament {
-        p {
-            font-size: 17px;
-            width: 95%;
-        }
-    }
-}
-
 @media screen and (max-width: 769px) {
     .about-tournament {
         p {
             font-size: 16px;
             width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .about-tournament {
+        p {
+            font-size: 17px;
+            width: 95%;
         }
     }
 }
@@ -289,19 +290,117 @@
 }
 
 /* REQUISITOS */
-@media screen and (min-width: 1518px) {
-    .requirements {
-        .card-sections {
-            width: 70%;
-        }
-    }
-}
-
 @media screen and (max-width: 1518px) {
     .requirements {
         .card-sections {
             width: 90%;
             margin: 0 auto;
+        }
+    }
+}
+
+/* RESULTADOS */
+@media screen and (max-width: 481px) {
+    .tournament-points {
+        padding: 20px;
+        .points__description {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            div {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            h3 {
+                font-size: 19px;
+            }
+        }
+        .tournament-points__p {
+            font-size: 16px;
+        }
+        p {
+            font-size: 15px;
+            text-align: left;
+        }
+        table {
+            tr {
+                td {
+                    font-size: 14px;
+                }
+            }
+        }
+        .mpv {
+            font-size: 17px;
+        }
+        button {
+            padding: 7px 19px;
+        }
+    }
+}
+
+/* NOTICIAS */
+
+@media screen and (max-width: 1179px) {
+    .news {
+        h3 {
+            font-size: 19px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .news {
+        grid-template-rows: repeat(7, 200px);
+        .news__4 {
+            grid-column: span 3;
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .news {
+        grid-template-rows: repeat(12, 200px);
+        div {
+            grid-column: span 6;
+            width: 100%; 
+        }
+    }
+}
+@media screen and (max-width: 481px) {
+    .news {
+        h3 {
+            font-size: 17px;
+        }
+    }
+}
+
+/* INSCRIBITE */
+
+@media screen and (max-width: 769px) {
+    .row {
+        width: 75%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .row {
+        width: 85%;
+        justify-content: center;
+        .form-control {
+            font-size: 15px;
+        }
+    }
+    .row__modification {
+        .form-select {
+            font-size: 15px;
         }
     }
 }

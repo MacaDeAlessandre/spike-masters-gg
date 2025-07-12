@@ -1,23 +1,23 @@
 .news {
-    width: 90%;
+    max-width: 1430px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 220px);
-    row-gap: 30px;
-    column-gap: 10px;
+    row-gap: 40px;
+    column-gap: 30px;
     justify-content: center;
-    padding: 20px;
-    margin: 10px auto;
+    overflow: hidden;
+    padding: 20px 40px;
+    margin: 40px auto;
     .news__1 {
-        background: linear-gradient(90deg,rgba(255, 70, 86, 0.162) 0%, rgba(0, 0, 0, 0.178) 50%, rgba(255, 70, 86, 0.19) 100%), url(../assets/img/bg-news.jpg);
+        text-align: center;
+        border: 2px solid #f06065;
+        border-radius: 10px;
+        padding: 10px;
+        background: linear-gradient(90deg, rgba(255, 70, 86, 0.162) 0%, rgba(0, 0, 0, 0.178) 50%, rgba(255, 70, 86, 0.19) 100%), url(../assets/img/bg-news.jpg);
         grid-column: span 6;
         width: 100% !important;
         transition: 0.6s ease-in-out;
-        &:hover {
-            background: linear-gradient(#ff4656c6, rgba(0, 0, 0, 0)), url(../assets/img/bg-news.jpg);
-            justify-self: center;
-            transform: scale(1.1);
-        }
         .news-date {
             font-size: 16px;
             text-align: justify;
@@ -33,16 +33,15 @@
         }
     }
     .news__2 {
-        background: linear-gradient(90deg,rgba(255, 70, 86, 0.162) 0%, rgba(0, 0, 0, 0.178) 50%, rgba(255, 70, 86, 0.19) 100%), url(../assets/img/bg-news.jpg);
+        text-align: center;
+        border: 2px solid #f06065;
+        border-radius: 10px;
+        padding: 10px;
+        background: linear-gradient(90deg, rgba(255, 70, 86, 0.162) 0%, rgba(0, 0, 0, 0.178) 50%, rgba(255, 70, 86, 0.19) 100%), url(../assets/img/bg-news.jpg);
         grid-column: span 3;
         width: 100% !important;
         justify-self: center;
         transition: 0.6s ease-in-out;
-        &:hover {
-            background: linear-gradient(#ff4656c6, rgba(0, 0, 0, 0)), url(../assets/img/bg-news.jpg);
-            width: 92% !important;
-            transform: scale(1.1);  
-        }
         .news-date {
             font-size: 16px;
             text-align: justify;
@@ -58,16 +57,15 @@
         }
     }
     .news__3 {
-        background: linear-gradient(90deg,rgba(255, 70, 86, 0.162) 0%, rgba(0, 0, 0, 0.178) 50%, rgba(255, 70, 86, 0.19) 100%), url(../assets/img/bg-news.jpg);
+        text-align: center;
+        border: 2px solid #f06065;
+        border-radius: 10px;
+        padding: 10px;
+        background: linear-gradient(90deg, rgba(255, 70, 86, 0.162) 0%, rgba(0, 0, 0, 0.178) 50%, rgba(255, 70, 86, 0.19) 100%), url(../assets/img/bg-news.jpg);
         grid-column: span 3;
         justify-self: center;
         width: 100% !important;
         transition: 0.6s ease-in-out;
-        &:hover {
-            background: linear-gradient(#ff4656c6, rgba(0, 0, 0, 0)), url(../assets/img/bg-news.jpg);
-            width: 92% !important;
-            transform: scale(1.1);
-        }
         .news-date {
             font-size: 16px;
             text-align: justify;
@@ -79,32 +77,31 @@
         p {
             font-size: 18px;
             padding: 5px;
-            width: 100% !important;            
+            width: 100% !important;
         }
     }
     .news__4 {
-        background: linear-gradient(90deg,rgba(255, 70, 86, 0.162) 0%, rgba(0, 0, 0, 0.178) 50%, rgba(255, 70, 86, 0.19) 100%), url(../assets/img/bg-news.jpg);
+        text-align: center;
+        border: 2px solid #f06065;
+        border-radius: 10px;
+        padding: 10px;
+        background: linear-gradient(90deg, rgba(255, 70, 86, 0.162) 0%, rgba(0, 0, 0, 0.178) 50%, rgba(255, 70, 86, 0.19) 100%), url(../assets/img/bg-news.jpg);
         grid-column: span 2;
-        justify-self: center;   
+        justify-self: center;
         width: 100% !important;
-        transition: 0.6s ease-in-out;  
-        &:hover {
-            background: linear-gradient(#ff4656c6, rgba(0, 0, 0, 0)), url(../assets/img/bg-news.jpg);
-            width: 92% !important;
-            transform: scale(1.1);
-        }     
+        transition: 0.6s ease-in-out;
         .news-date {
             font-size: 16px;
             text-align: justify;
             padding: 5px;
         }
-        h3 {
-            padding: 5px; 
-        }
-        p {
-            font-size: 18px;
-            padding: 5px;
-            width: 100% !important; 
-        }
+    }
+    h3 {
+        padding: 5px;
+    }
+    p {
+        font-size: 18px;
+        padding: 5px;
+        width: 100% !important;
     }
 }

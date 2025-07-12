@@ -592,27 +592,20 @@
 
 /* INSCRIBITE */
 
-@media screen and (max-width: 769px) {
-    .row {
-        width: 75%;
-        justify-content: center;
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: fit-content !important;
     }
 }
 
 @media screen and (max-width: 481px) {
     .form {
-        .row {
-            width: 85%;
-            justify-content: center;
-            padding: 40px 5px;
-            .form-control {
-                font-size: 15px;
-            }
-        }
-
-        .row__modification {
-            .form-select {
-                font-size: 15px;
+        .container {
+            .formulario__wrapper {
+                padding: 60px 15px;
+                .form-control {
+                    font-size: 15px;
+                }
             }
         }
     }

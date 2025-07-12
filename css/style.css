@@ -1148,6 +1148,13 @@ a:visited {
 
 /* Página Inscribite*/
 
+.formulario__wrapper {
+    max-width: 800px;
+    justify-content: center !important;
+    padding: 60px;
+    margin: 0 auto;
+}
+
 .form {
     display: flex;
     justify-content: center;
@@ -1167,22 +1174,11 @@ a:visited {
     margin: auto;
 }
 
-.row {
-    justify-content: center !important;
-    margin: 0 !important;
-    padding: 60px;
-}
-
-.row div {
-    padding: 10px 10px
+.formulario__wrapper div {
+    padding: 10px 10px;
 }
 
 .form-control:focus {
-    border-color: #ff4654;
-    box-shadow: 0 0 0 .25rem #ff465636;
-}
-
-.form-select:focus {
     border-color: #ff4654;
     box-shadow: 0 0 0 .25rem #ff465636;
 }

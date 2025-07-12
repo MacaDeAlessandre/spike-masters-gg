@@ -66,16 +66,16 @@
     <!-- Sección Formulario -->
     <section class="form">
         <img class="form__bg" src="../assets/img/inscription-bg.jpg" alt="Imagen de personajes de Valorant">
-        <form class="row g-3">
-            <div class="col-md-3">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
-            </div>
-            <div class="col-md-3">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
-            </div>
-            <div class="row__modification">
-                <div class="mx-auto col-md-6">
-                    <select id="inputState" class="form-select" required>
+        <div class="container">
+            <form class="row g-3 justify-content-center formulario__wrapper">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+                </div>
+                <div class="col-md-12">
+                    <select class="form-select" required>
                         <option selected>País de residencia</option>
                         <option>Argentina</option>
                         <option>Chile</option>
@@ -83,28 +83,26 @@
                         <option>Perú</option>
                     </select>
                 </div>
-                <div class="mx-auto mt-3 col-md-6">
+                <div class="col-md-12">
                     <input type="email" class="form-control" placeholder="Correo Electrónico"
                         aria-label="Correo Electrónico" id="inputEmail4" required>
                 </div>
-                <div class="input-span mx-auto mt-3 col-md-6">
+                <div class="col-md-12 position-relative">
                     <input type="text" class="form-control" placeholder="Riot ID" aria-label="Riot ID" required>
-                    <i class="bi bi-question-circle-fill" title="Ejemplo: NOMBRE#0000"></i>
                 </div>
-                <div class="input-span mx-auto mt-3 col-md-6">
+                <div class="col-md-12 position-relative">
                     <input type="text" class="form-control" placeholder="Nombre de usuario de Discord"
                         aria-label="Nombre de usuario de Discord" required>
-                    <i class="bi bi-question-circle-fill" title="Deberás conectarte a nuestro canal de Discord al momento del torneo"></i>
                 </div>
-                <div class="mx-auto mt-3 col-md-6">
-                    <select id="inputState" class="form-select" required>
+                <div class="col-md-12">
+                    <select class="form-select" required>
                         <option selected>Disponibilidad para jugar</option>
                         <option>Puedo jugar entre semana</option>
                         <option>Puedo jugar fines de semana</option>
                         <option>Flexible</option>
                     </select>
                 </div>
-                <div class="mt-3 col-12">
+                <div class="col-12">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="gridCheck">
                         <label class="form-check-label" for="gridCheck">
@@ -112,11 +110,11 @@
                         </label>
                     </div>
                 </div>
-                <div class="mt-3 col-12">
+                <div class="col-12 text-center">
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->

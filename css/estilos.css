@@ -573,63 +573,46 @@ footer .footer__icons a img {
   height: 100%;
   margin: auto;
 }
-.form .row {
+.form .container .formulario__wrapper {
+  max-width: 800px;
   justify-content: center !important;
-  margin: 0 !important;
   padding: 60px;
+  margin: 0 auto;
 }
-.form .row .col-md-3 .form-control:focus {
+.form .container .formulario__wrapper .col-md-6 .form-control:focus {
   border-color: #ff4654;
   box-shadow: 0 0 0 0.25rem rgba(255, 70, 86, 0.2117647059);
 }
-.form .row__modification .mx-auto .form-select:focus {
+.form .container .col-md-12 .form-select:focus {
   border-color: #ff4654;
   box-shadow: 0 0 0 0.25rem rgba(255, 70, 86, 0.2117647059);
 }
-.form .mx-auto .form-control:focus {
+.form .container .col-md-12 .form-control:focus {
   border-color: #ff4654;
   box-shadow: 0 0 0 0.25rem rgba(255, 70, 86, 0.2117647059);
 }
-.form .input-span {
-  display: flex;
-  align-items: center;
-}
-.form .input-span .form-control:focus {
-  border-color: #ff4654;
-  box-shadow: 0 0 0 0.25rem rgba(255, 70, 86, 0.2117647059);
-}
-.form .input-span .bi {
-  padding: 6px;
-  transition: 0.3s ease-in;
-}
-.form .input-span .bi:hover {
-  color: #f06065;
-}
-.form .mx-auto .form-select:focus {
-  border-color: #ff4654;
-  box-shadow: 0 0 0 0.25rem rgba(255, 70, 86, 0.2117647059);
-}
-.form .col-12 {
+.form .container .col-12 {
   display: flex;
   justify-content: center;
 }
-.form .col-12 .form-check {
+.form .container .col-12 .form-check {
   display: flex !important;
   justify-content: center !important;
   gap: 10px;
+  margin: 10px;
 }
-.form .col-12 .form-check .form-check-input {
+.form .container .col-12 .form-check .form-check-input {
   --bs-form-check-bg: none !important;
 }
-.form .col-12 .form-check .form-check-input:checked {
+.form .container .col-12 .form-check .form-check-input:checked {
   background-color: #ff4654;
   border-color: #ff4654;
 }
-.form .col-12 {
+.form .container .col-12 {
   display: flex;
   justify-content: center;
 }
-.form .col-12 .btn-primary {
+.form .container .col-12 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #ff4654;
   --bs-btn-border-color: #ff4654;
@@ -646,6 +629,10 @@ footer .footer__icons a img {
   --bs-btn-disabled-border-color: #0d6efd;
   border-radius: 0.6em;
   transition: 0.3s ease-in;
+}
+
+.form .formulario__wrapper div {
+  padding: 10px 10px;
 }
 
 /* GENERALES */
@@ -1110,22 +1097,16 @@ footer .footer__icons a img {
   }
 }
 /* INSCRIBITE */
-@media screen and (max-width: 769px) {
-  .row {
-    width: 75%;
-    justify-content: center;
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: fit-content !important;
   }
 }
 @media screen and (max-width: 481px) {
-  .form .row {
-    width: 85%;
-    justify-content: center;
-    padding: 40px 5px;
+  .form .container .formulario__wrapper {
+    padding: 60px 15px;
   }
-  .form .row .form-control {
-    font-size: 15px;
-  }
-  .form .row__modification .form-select {
+  .form .container .formulario__wrapper .form-control {
     font-size: 15px;
   }
 }
